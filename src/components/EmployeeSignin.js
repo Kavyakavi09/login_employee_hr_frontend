@@ -27,7 +27,7 @@ function EmployeeLogin() {
     onSubmit: async (values) => {
       try {
         let loginData = await axios.post(
-          'http://localhost:4009/api/employee/signin',
+          'https://employee-hr-portal-app.herokuapp.com/api/employee/signin',
           values
         );
         window.localStorage.setItem('Authorization', loginData.data.token);

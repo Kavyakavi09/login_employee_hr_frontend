@@ -7,8 +7,8 @@ function EmployeeHrSignUp() {
     <div>
       <div className='container mt-5'>
         <div className='row'>
-          <div className='col-xl-10  mx-auto'>
-            <div className='card card-tab'>
+          <div className='col-xl-10 mx-auto'>
+            <div className='card card-tab bg-hero1 border-0'>
               <div className='card-body'>
                 <ul
                   class='nav nav-tabs justify-content-center'

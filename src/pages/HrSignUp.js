@@ -33,7 +33,10 @@ function HrSignUp() {
     }),
     onSubmit: async (values) => {
       try {
-        await axios.post(`http://localhost:4009/api/hr/signup`, values);
+        await axios.post(
+          `https://employee-hr-portal-app.herokuapp.com/api/hr/signup`,
+          values
+        );
         navigate('/');
       } catch (error) {
         setErrorMsg(error.response.data.message);

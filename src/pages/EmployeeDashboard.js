@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 function EmployeeDashboard() {
   let navigate = useNavigate();
   const [name, setName] = useState(localStorage.getItem('name'));
   return (
-    <div className='container mt-5'>
-      <div className='row'>
-        <div className='col-lg-10 mx-auto'>
+    <div className='container'>
+      <Navbar />
+      <div className='row mt-5 text-white'>
+        <div className='col-lg-10 mx-auto mt-5'>
           <h1 className='text-center'>Welcome to Employee Dashboard</h1>
           <div className='mt-5 text-center'>
             <h3>Hi, {name}😊</h3>
